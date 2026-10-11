@@ -1,0 +1,45 @@
+# ============================================================
+# NCU 人机协同程序设计 —— 个人作品集 .gitignore
+# 作用：告诉 Git「这些文件不要放进仓库」，避免把垃圾/隐私传上去
+# ============================================================
+
+# ---------- 操作系统自动生成的文件 ----------
+# Windows 缩略图缓存、垃圾箱
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# macOS 隐藏文件
+.DS_Store
+.AppleDouble
+.Spotlight-V100
+
+# ---------- 编辑器 / IDE 的临时配置 ----------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*~
+
+# ---------- 依赖与运行环境（体积大、可重新生成，不入库） ----------
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+
+# ---------- 日志与本地密钥（隐私！绝对不能上传） ----------
+*.log
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+
+# ---------- 系统/工具缓存 ----------
+.cache/
+.tmp/
+tmp/
